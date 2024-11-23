@@ -1,7 +1,7 @@
 import streamlit as st 
 st.title("CGPA Calculator for PSG TECH")
 st.write("Enter your GPA and credits for each semester to calculate your CGPA.")
-num_semesters = st.number_input("How many semesters?", min_value=0, step=1)
+num_semesters = st.number_input("How many semesters?", min_value=1, step=1)
 gpa_list = []
 credit_list = []
 for i in range(int(num_semesters)):
