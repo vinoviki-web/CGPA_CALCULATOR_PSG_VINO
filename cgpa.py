@@ -6,7 +6,7 @@ gpa_list = []
 credit_list = []
 for i in range(int(num_semesters)):
     st.write(f"### Semester {i + 1}")
-    gpa = st.number_input(f"Enter GPA for Semester {i + 1}:", min_value=0.0, max_value=10.0, step=0.01)
+    gpa = st.number_input(f"Enter GPA for Semester {i + 1}:", min_value=0, max_value=10, step=1)
     credits = st.number_input(f"Enter total Credits for Semester {i + 1}:", min_value=0, step=1)
     gpa_list.append(gpa)
     credit_list.append(credits)
